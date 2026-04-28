@@ -91,7 +91,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Accordion",
-                  "filter": "accordion"
+                  "filter": "accordion",
+                  "model": "accordion"
                 }
               }
             }
@@ -136,7 +137,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Card List",
-                  "filter": "card-list"
+                  "filter": "card-list",
+                  "model": "card-list"
                 }
               }
             }
@@ -166,7 +168,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Cards",
-                  "filter": "cards"
+                  "filter": "cards",
+                  "model": "cards"
                 }
               }
             }
@@ -196,7 +199,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Carousel",
-                  "filter": "carousel"
+                  "filter": "carousel",
+                  "model": "carousel"
                 }
               }
             }
@@ -256,7 +260,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Feature Grid",
-                  "filter": "feature-grid"
+                  "filter": "feature-grid",
+                  "model": "feature-grid"
                 }
               }
             }
@@ -301,7 +306,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Gallery",
-                  "filter": "gallery"
+                  "filter": "gallery",
+                  "model": "gallery"
                 }
               }
             }
@@ -331,7 +337,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Hero Carousel",
-                  "filter": "hero-carousel"
+                  "filter": "hero-carousel",
+                  "model": "hero-carousel"
                 }
               }
             }
@@ -376,7 +383,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Logo Wall",
-                  "filter": "logo-wall"
+                  "filter": "logo-wall",
+                  "model": "logo-wall"
                 }
               }
             }
@@ -406,7 +414,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Mosaic",
-                  "filter": "mosaic"
+                  "filter": "mosaic",
+                  "model": "mosaic"
                 }
               }
             }
@@ -436,7 +445,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Pricing",
-                  "filter": "pricing"
+                  "filter": "pricing",
+                  "model": "pricing"
                 }
               }
             }

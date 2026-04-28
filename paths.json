@@ -1,8 +1,8 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/"
+    "/content/movistarplusagenticmigration/:/"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/movistarplusagenticmigration/"
   ]
 }
