@@ -1,74 +1,94 @@
 .pricing {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 0 24px;
+  gap: 30px;
+  padding: 0 39px;
+  margin-bottom: 30px;
 }
 
 .pricing-card {
-  background: var(--surface-color);
-  border-radius: 12px;
+  background: #fff;
+  border-radius: 8px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  color: #fff;
-  border: 1px solid var(--border-color);
+  color: #1f1f1f;
 }
 
 .pricing-card-image {
   line-height: 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 0;
 }
 
 .pricing-card-image img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
 }
 
 .pricing-card-body {
-  padding: 24px;
+  padding: 30px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .pricing-card-body h3 {
-  font-size: 18px;
-  margin: 0 0 8px;
-  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: #1f1f1f;
 }
 
 .pricing-card-body p {
-  font-size: 14px;
-  color: var(--text-muted-color);
+  font-size: 16px;
+  color: #666;
   margin: 0 0 8px;
+  line-height: 1.4;
 }
 
 .pricing-card-body ul {
   padding-left: 20px;
-  margin: 0 0 16px;
-  font-size: 13px;
-  color: var(--text-muted-color);
+  margin: 0 0 24px;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
 }
 
 .pricing-card-body ul li {
   padding: 4px 0;
 }
 
-.pricing-card-body a.button {
-  display: inline-block;
-  background: #fff;
-  color: var(--background-color);
-  padding: 10px 24px;
-  border-radius: 24px;
-  font-weight: 700;
-  font-size: 14px;
+.pricing-card-body a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0 102 255);
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: 5px;
+  font-family: var(--heading-font-family);
+  font-size: 19px;
   text-decoration: none;
+  text-transform: uppercase;
+  margin-top: auto;
+  width: 100%;
+}
+
+.pricing-card-body a:hover {
+  background: rgb(0 82 204);
+  color: #fff;
 }
 
 @media (width >= 900px) {
   .pricing {
     flex-direction: row;
-    padding: 0 32px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 
   .pricing-card {

@@ -1,15 +1,25 @@
+.mosaic {
+  padding: 0 39px;
+  margin-bottom: 50px;
+}
+
 .mosaic-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
-  padding: 0 24px;
 }
 
 .mosaic-item {
   position: relative;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
-  background: var(--surface-color);
+  background: rgb(255 255 255 / 10%);
+  padding: 16px;
+  transition: transform 0.2s;
+}
+
+.mosaic-item:hover {
+  transform: scale(1.02);
 }
 
 .mosaic-featured {
@@ -21,6 +31,7 @@
   aspect-ratio: 2 / 3;
   object-fit: cover;
   display: block;
+  border-radius: 4px;
 }
 
 .mosaic-featured .mosaic-image img {
@@ -28,19 +39,25 @@
 }
 
 .mosaic-body {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 12px;
-  background: linear-gradient(transparent, rgb(0 0 0 / 80%));
+  padding: 8px 0 0;
   color: #fff;
 }
 
-.mosaic-body p {
+.mosaic-body h3 {
+  font-size: 14px;
+  font-weight: 400;
   margin: 0;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.mosaic-body p {
+  margin: 0 0 4px;
   font-size: 12px;
   line-height: 1.3;
+  color: rgb(255 255 255 / 60%);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .mosaic-body a {
@@ -58,12 +75,11 @@
   .mosaic-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
-    padding: 0 32px;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
-  .mosaic-body p {
-    font-size: 13px;
+  .mosaic-body h3 {
+    font-size: 15px;
   }
 }

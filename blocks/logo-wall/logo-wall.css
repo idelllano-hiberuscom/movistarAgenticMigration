@@ -1,17 +1,21 @@
+.logo-wall {
+  margin-bottom: 50px;
+}
+
 .logo-wall-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding: 0 24px;
+  gap: 8px;
+  padding: 0 39px;
 }
 
 .logo-wall-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--surface-color);
-  border-radius: 8px;
-  padding: 16px;
+  background: rgb(31 31 31);
+  border-radius: 5px;
+  padding: 12px;
   aspect-ratio: 16 / 9;
 }
 
@@ -23,15 +27,14 @@
 
 @media (width >= 600px) {
   .logo-wall-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (width >= 900px) {
   .logo-wall-grid {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 16px;
-    padding: 0 32px;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
     max-width: 1200px;
     margin: 0 auto;
   }
