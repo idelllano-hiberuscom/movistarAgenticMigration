@@ -1,0 +1,29 @@
+{
+  "status": "success",
+  "url": "https://www.movistarplus.es",
+  "path": "movistarplusagenticmigration/home-migrada",
+  "timestamp": "2026-04-28T19:31:39.112Z",
+  "title": "Movistar Plus+: ver series, películas, deportes y mucho más.",
+  "template": "homepage-v2",
+  "blocks": [
+    "hero-carousel",
+    "card-list",
+    "card-list",
+    "pricing",
+    "feature-grid",
+    "feature-grid",
+    "logo-wall",
+    "mosaic",
+    "mosaic",
+    "mosaic",
+    "mosaic",
+    "mosaic",
+    "banner",
+    "banner",
+    "carousel",
+    "carousel",
+    "gallery",
+    "cta",
+    "accordion"
+  ]
+}

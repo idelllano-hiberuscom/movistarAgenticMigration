@@ -1,20 +1,150 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: var(--background-color);
+  color: #fff;
+  font-size: 13px;
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  max-width: 1280px;
+  padding: 48px 24px 24px;
 }
 
 footer .footer p {
   margin: 0;
 }
 
+footer a:any-link {
+  color: rgb(255 255 255 / 70%);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* link columns */
+footer .footer-links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
+
+@media (width >= 600px) {
+  footer .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  footer .footer-links {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+  }
+}
+
+footer .footer-column h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: #fff;
+}
+
+footer .footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-column ul li {
+  padding: 4px 0;
+}
+
+footer .footer-column ul li a {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* brand row */
+footer .footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
+
+footer .footer-brand img {
+  width: 100px;
+  height: auto;
+}
+
+footer .footer-brand p {
+  color: rgb(255 255 255 / 50%);
+  font-size: 12px;
+}
+
+/* legal */
+footer .footer-legal {
+  padding: 16px 0;
+  border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
+
+footer .footer-legal ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-legal ul li a {
+  font-size: 12px;
+  color: rgb(255 255 255 / 50%);
+}
+
+footer .footer-legal ul li a:hover {
+  color: #fff;
+}
+
+/* social */
+footer .footer-social {
+  padding: 24px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+footer .footer-social p {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+
+footer .footer-social ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-social ul li a:any-link {
+  color: rgb(255 255 255 / 70%);
+  font-size: 13px;
+}
+
+footer .footer-social ul li a:hover {
+  color: var(--link-hover-color);
+}
+
 @media (width >= 900px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: 48px 32px 32px;
   }
 }
