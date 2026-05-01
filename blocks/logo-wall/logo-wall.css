@@ -1,0 +1,50 @@
+.logo-wall__header {
+  margin-bottom: var(--space-6);
+}
+
+.logo-wall__header h2,
+.logo-wall__header h3 {
+  margin: 0 0 var(--space-3);
+  font-size: clamp(1.8rem, 2.2vw, 2.4rem);
+}
+
+.logo-wall__header p {
+  margin: 0;
+  color: var(--color-muted);
+  max-width: 640px;
+}
+
+.logo-wall__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.logo-wall__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3);
+  border-radius: var(--radius-m);
+  background: var(--color-surface-2);
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.logo-wall__item img {
+  max-height: 32px;
+  width: auto;
+  filter: grayscale(100%) brightness(1.2);
+  opacity: 0.8;
+}
+
+.logo-wall__item:hover {
+  border-color: var(--color-border);
+  transform: translateY(-2px);
+}
+
+.logo-wall__item:hover img {
+  filter: none;
+  opacity: 1;
+}

@@ -31,9 +31,33 @@
     ]
   },
   {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carousel-item"
+    ]
+  },
+  {
+    "id": "feature-grid",
+    "components": [
+      "feature-grid-item"
+    ]
+  },
+  {
     "id": "hero-carousel",
     "components": [
       "hero-carousel-slide"
+    ]
+  },
+  {
+    "id": "logo-wall",
+    "components": [
+      "logo-wall-item"
     ]
   },
   {
