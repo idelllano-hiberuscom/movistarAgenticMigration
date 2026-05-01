@@ -20,19 +20,9 @@
       "feature-grid",
       "logo-wall",
       "carousel",
-      "accordion"
-    ]
-  },
-  {
-    "id": "cards",
-    "components": [
-      "card"
-    ]
-  },
-  {
-    "id": "mosaic",
-    "components": [
-      "mosaic-item"
+      "accordion",
+      "cta",
+      "banner"
     ]
   },
   {

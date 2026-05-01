@@ -1,0 +1,52 @@
+/* CTA Price block */
+.cta-container .cta-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-l);
+}
+
+.cta {
+  text-align: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.cta-content h2,
+.cta-content h3 {
+  font-size: var(--heading-font-size-xl);
+  margin: 0 0 var(--spacing-m);
+}
+
+.cta-content p {
+  margin: 0 0 var(--spacing-m);
+  color: var(--text-muted-color);
+  font-size: var(--body-font-size-l);
+}
+
+.cta-price {
+  display: block;
+  font-size: 3rem;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: var(--spacing-l);
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 32px;
+  border-radius: var(--button-border-radius);
+  background: var(--accent-color);
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: var(--button-font-size);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background var(--transition-base);
+}
+
+.cta-button:hover {
+  background: var(--accent-hover-color);
+  color: #fff;
+}
