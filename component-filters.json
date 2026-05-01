@@ -12,6 +12,7 @@
       "image",
       "button",
       "title",
+      "site-header",
       "hero",
       "cards",
       "columns",
@@ -30,78 +31,21 @@
     ]
   },
   {
-    "id": "accordion",
-    "components": [
-      "accordion-item"
-    ]
-  },
-  {
-    "id": "card-list",
-    "components": [
-      "card-list-item"
-    ]
-  },
-  {
-    "id": "cards",
-    "components": [
-      "card"
-    ]
-  },
-  {
-    "id": "carousel",
-    "components": [
-      "carousel-item"
-    ]
-  },
-  {
-    "id": "columns",
-    "components": [
-      "column"
-    ]
-  },
-  {
-    "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
-  },
-  {
-    "id": "feature-grid",
-    "components": [
-      "feature-grid-item"
-    ]
-  },
-  {
-    "id": "gallery",
-    "components": [
-      "gallery-item"
-    ]
-  },
-  {
     "id": "hero-carousel",
     "components": [
       "hero-carousel-slide"
     ]
   },
   {
-    "id": "logo-wall",
-    "components": [
-      "logo-wall-item"
-    ]
-  },
-  {
-    "id": "mosaic",
-    "components": [
-      "mosaic-item"
-    ]
-  },
-  {
     "id": "pricing",
     "components": [
       "pricing-plan"
+    ]
+  },
+  {
+    "id": "site-header",
+    "components": [
+      "site-header-item"
     ]
   }
 ]

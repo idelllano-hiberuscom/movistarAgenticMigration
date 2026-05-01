@@ -142,406 +142,21 @@
     ]
   },
   {
-    "id": "accordion",
+    "id": "hero-carousel",
     "fields": [
       {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "variant",
-        "label": "Variant",
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
         "options": [
           {
-            "name": "Default",
-            "value": ""
+            "name": "Autoplay",
+            "value": "autoplay"
           },
           {
             "name": "Compact",
             "value": "compact"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "accordion-item",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "heading",
-        "value": "",
-        "label": "Question",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Answer",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "banner",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Content",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "card-list",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "variant",
-        "label": "Variant",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Highlight",
-            "value": "highlight"
-          },
-          {
-            "name": "Couped",
-            "value": "couped"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "card-list-item",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "cards",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "variant",
-        "label": "Variant",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Highlight",
-            "value": "highlight"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "card",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "carousel",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "variant",
-        "label": "Variant",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Horizontal",
-            "value": "horizontal"
-          },
-          {
-            "name": "Grid",
-            "value": "grid"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "carousel-item",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "columns",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "columns",
-        "value": "",
-        "label": "Columns"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
-      }
-    ]
-  },
-  {
-    "id": "cta",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Content",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "feature-grid",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "variant",
-        "label": "Variant",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Dark",
-            "value": "dark"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "feature-grid-item",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Icon",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "fragment",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
-      }
-    ]
-  },
-  {
-    "id": "gallery",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "variant",
-        "label": "Variant",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Vertical",
-            "value": "vertical"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "gallery-item",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Caption",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "hero-carousel",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "variant",
-        "label": "Variant",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Autoplay",
-            "value": "autoplay"
           }
         ]
       }
@@ -553,21 +168,272 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "media_image",
         "label": "Background Image",
         "multi": false
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "media_imageAlt",
+        "label": "Image Alt"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "content_title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "content_titleType",
+        "label": "Title Type",
+        "value": "h2",
+        "options": [
+          {
+            "name": "H1",
+            "value": "h1"
+          },
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          }
+        ]
+      },
+      {
         "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Content",
-        "valueType": "string"
+        "valueType": "string",
+        "name": "content_text",
+        "label": "Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "offer_text",
+        "label": "Offer",
+        "value": ""
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "offer_link",
+        "label": "Offer Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "offer_linkText",
+        "label": "Offer Link Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "offer_linkTitle",
+        "label": "Offer Link Title"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "offer_linkType",
+        "label": "Offer Link Type",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
       }
     ]
   },
   {
-    "id": "hero",
+    "id": "pricing",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "header_title",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "header_titleType",
+        "label": "Title Type",
+        "value": "h2",
+        "options": [
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          }
+        ]
+      },
+      {
+        "component": "textarea",
+        "valueType": "string",
+        "name": "header_text",
+        "label": "Description"
+      },
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Compact",
+            "value": "compact"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pricing-plan",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "media_image",
+        "label": "Plan Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "media_imageAlt",
+        "label": "Image Alt"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "content_title",
+        "label": "Plan Title"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "content_titleType",
+        "label": "Plan Title Type",
+        "value": "h3",
+        "options": [
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "content_text",
+        "label": "Plan Details",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "price_value",
+        "label": "Price"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "price_unit",
+        "label": "Unit"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "price_note",
+        "label": "Price Note"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "price_badge",
+        "label": "Badge"
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "cta_link",
+        "label": "CTA Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta_linkText",
+        "label": "CTA Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta_linkTitle",
+        "label": "CTA Title"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "cta_linkType",
+        "label": "CTA Type",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Primary",
+            "value": "primary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "site-header",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Sticky",
+            "value": "sticky"
+          },
+          {
+            "name": "Compact",
+            "value": "compact"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "site-header-item",
     "fields": [
       {
         "component": "reference",
@@ -580,169 +446,57 @@
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
+        "label": "Image Alt"
       },
       {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "logo-wall",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "link",
+        "label": "Link"
       },
       {
         "component": "text",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
+        "valueType": "string",
+        "name": "linkText",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkTitle",
+        "label": "Title"
       },
       {
         "component": "select",
-        "name": "variant",
-        "label": "Variant",
+        "valueType": "string",
+        "name": "linkType",
+        "label": "Type",
         "options": [
           {
             "name": "Default",
             "value": ""
           },
           {
-            "name": "Compact",
-            "value": "compact"
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Utility",
+            "value": "utility"
+          },
+          {
+            "name": "CTA",
+            "value": "cta"
+          },
+          {
+            "name": "Icon",
+            "value": "icon"
+          },
+          {
+            "name": "Logo",
+            "value": "logo"
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "logo-wall-item",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Logo Image",
-        "multi": false
-      }
-    ]
-  },
-  {
-    "id": "mosaic",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "variant",
-        "label": "Variant",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Series",
-            "value": "series"
-          },
-          {
-            "name": "Cinema",
-            "value": "cinema"
-          },
-          {
-            "name": "Sports",
-            "value": "sports"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "mosaic-item",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "pricing",
-    "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "name": "variant",
-        "label": "Variant",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Featured",
-            "value": "featured"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "pricing-plan",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Plan Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Plan Details",
-        "valueType": "string"
       }
     ]
   }
