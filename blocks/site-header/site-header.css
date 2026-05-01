@@ -1,8 +1,9 @@
 .site-header {
   position: relative;
   z-index: 20;
-  background: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
+  background: rgba(11, 13, 17, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
 }
 
 .site-header.sticky {
@@ -13,17 +14,37 @@
 .site-header__inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--space-4) var(--space-5);
+  padding: var(--space-3) var(--space-5);
+  min-height: 72px;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: var(--space-5);
 }
 
+.site-header__logo a.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
 .site-header__logo img {
-  height: 26px;
+  height: 28px;
   width: auto;
   display: block;
+}
+
+.site-header__nav {
+  justify-self: center;
+}
+
+.site-header__utility {
+  justify-self: end;
 }
 
 .site-header__nav ul,
@@ -33,14 +54,21 @@
   padding: 0;
   display: flex;
   align-items: center;
-  gap: var(--space-5);
+  gap: var(--space-4);
 }
 
 .site-header__link {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 0.95rem;
-  letter-spacing: 0.02em;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.site-header__link.primary:hover {
+  color: var(--color-accent);
 }
 
 .site-header__link.utility {
@@ -55,6 +83,10 @@
   font-weight: 600;
 }
 
+.site-header__link.cta:hover {
+  background: var(--color-accent-strong);
+}
+
 .site-header__link.icon,
 .site-header__icon {
   display: inline-flex;
@@ -64,6 +96,7 @@
   height: 36px;
   border-radius: 50%;
   border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .site-header__link.icon picture,
@@ -100,6 +133,7 @@
 @media (max-width: 899px) {
   .site-header__inner {
     grid-template-columns: auto auto;
+    min-height: 64px;
   }
 
   .site-header__nav,
