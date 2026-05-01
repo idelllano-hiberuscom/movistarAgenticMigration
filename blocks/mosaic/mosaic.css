@@ -1,0 +1,109 @@
+/* Mosaic block — Asymmetric grid layout */
+.mosaic-container .mosaic-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-l);
+}
+
+.mosaic-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-m);
+}
+
+.mosaic-item {
+  position: relative;
+  border-radius: var(--border-radius-m);
+  overflow: hidden;
+  background: var(--surface-color);
+  transition: transform var(--transition-base);
+}
+
+.mosaic-item:hover {
+  transform: translateY(-2px);
+}
+
+.mosaic-item-image {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.mosaic-item-image picture,
+.mosaic-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.mosaic-item:hover .mosaic-item-image img {
+  transform: scale(1.03);
+}
+
+.mosaic-item-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spacing-m);
+  background: linear-gradient(to top, rgb(0 0 0 / 80%) 0%, transparent 100%);
+  color: #fff;
+}
+
+.mosaic-item-body p {
+  margin: 0;
+  font-size: var(--body-font-size-s);
+  color: #fff;
+}
+
+.mosaic-item-body h2,
+.mosaic-item-body h3 {
+  margin: 0 0 var(--spacing-xs);
+  font-size: var(--heading-font-size-s);
+  color: #fff;
+}
+
+/* Large item — first in grid, spans full width or 2 cols */
+.mosaic-item--large .mosaic-item-image {
+  aspect-ratio: 21 / 9;
+}
+
+.mosaic-item--large .mosaic-item-body h2,
+.mosaic-item--large .mosaic-item-body h3 {
+  font-size: var(--heading-font-size-l);
+}
+
+.mosaic-item--large .mosaic-item-body p {
+  font-size: var(--body-font-size-m);
+  max-width: 500px;
+}
+
+@media (width >= 600px) {
+  .mosaic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mosaic-item--large {
+    grid-column: span 2;
+  }
+}
+
+@media (width >= 900px) {
+  .mosaic-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+  }
+
+  .mosaic-item--large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .mosaic-item--large .mosaic-item-image {
+    aspect-ratio: auto;
+    position: absolute;
+    inset: 0;
+  }
+}
