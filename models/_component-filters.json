@@ -6,9 +6,70 @@
     ]
   },
   {
-    "...": "./_section.json#/filters"
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "site-header",
+      "hero",
+      "cards",
+      "columns",
+      "fragment",
+      "hero-carousel",
+      "card-list",
+      "pricing",
+      "feature-grid",
+      "logo-wall",
+      "mosaic",
+      "banner",
+      "carousel",
+      "gallery",
+      "cta",
+      "accordion"
+    ]
   },
   {
-    "...": "../blocks/*/_*.json#/filters"
+    "id": "accordion",
+    "components": [
+      "accordion-item"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carousel-item"
+    ]
+  },
+  {
+    "id": "feature-grid",
+    "components": [
+      "feature-grid-item"
+    ]
+  },
+  {
+    "id": "hero-carousel",
+    "components": [
+      "hero-carousel-slide"
+    ]
+  },
+  {
+    "id": "logo-wall",
+    "components": [
+      "logo-wall-item"
+    ]
+  },
+  {
+    "id": "pricing",
+    "components": [
+      "pricing-plan"
+    ]
+  },
+  {
+    "id": "site-header",
+    "components": [
+      "site-header-item"
+    ]
   }
 ]
