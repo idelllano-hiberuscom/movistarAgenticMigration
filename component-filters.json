@@ -14,11 +14,25 @@
       "title",
       "site-header",
       "hero-carousel",
+      "cards",
+      "mosaic",
       "pricing",
       "feature-grid",
       "logo-wall",
       "carousel",
       "accordion"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "mosaic",
+    "components": [
+      "mosaic-item"
     ]
   },
   {
