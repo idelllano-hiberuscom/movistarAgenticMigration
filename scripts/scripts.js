@@ -11,6 +11,7 @@ import {
   waitForFirstImage,
 } from './aem.js';
 
+
 function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
