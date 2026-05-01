@@ -1,0 +1,81 @@
+/* Banner CTA block */
+.banner-container .banner-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-l);
+}
+
+.banner > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-l);
+  align-items: center;
+  background: var(--surface-color);
+  border-radius: var(--border-radius-l);
+  overflow: hidden;
+}
+
+.banner-image {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.banner-image picture,
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-content {
+  padding: var(--spacing-xl);
+}
+
+.banner-content h2,
+.banner-content h3 {
+  font-size: var(--heading-font-size-l);
+  margin: 0 0 var(--spacing-m);
+}
+
+.banner-content p {
+  font-size: var(--body-font-size-m);
+  color: var(--text-muted-color);
+  margin: 0 0 var(--spacing-l);
+  line-height: 1.5;
+}
+
+.banner-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border-radius: var(--button-border-radius);
+  background: var(--accent-color);
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: var(--button-font-size);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background var(--transition-base);
+}
+
+.banner-button:hover {
+  background: var(--accent-hover-color);
+  color: #fff;
+}
+
+@media (width >= 900px) {
+  .banner > div {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banner-image {
+    aspect-ratio: auto;
+    min-height: 300px;
+  }
+
+  .banner-content {
+    padding: var(--spacing-xxl);
+  }
+}
